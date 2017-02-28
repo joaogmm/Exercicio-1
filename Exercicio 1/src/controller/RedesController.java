@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Properties;
-import java.util.Set;
 
 public class RedesController {
 
@@ -43,10 +41,11 @@ public class RedesController {
 				BufferedReader buffinho = new BufferedReader(leitor);
 				String linha = buffinho.readLine();
 				while (linha != null) {
-					if(linha.contains("inet")){
-					System.out.println(linha);
+					if(linha.contains("scope")){
+					System.out.println(linha);				
+					}
 					linha = buffinho.readLine();
-				}}
+				}
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
